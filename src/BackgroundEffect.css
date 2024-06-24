@@ -1,0 +1,31 @@
+/* src/components/BackgroundEffect.css */
+
+/* Ensure the parent container has relative positioning */
+.relative {
+    position: relative;
+  }
+  
+  /* Ensure the absolute container fills the screen */
+  .absolute {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Skew and position the green lines */
+  .bg-green-500 {
+    background-color: #6ee7b7; /* Tailwind CSS green color */
+    transform-origin: top left;
+    transform: skewY(6deg);
+  }
+  
+  /* Adjust this as needed */
+  .grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+  
+  /* Adjust gap between lines */
+  .gap-4 {
+    gap: 1rem; /* Adjust gap size as needed */
+  }
+  
