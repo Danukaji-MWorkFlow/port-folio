@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import LogoAnim from '../Components/LogoAnim';
 
 function Home() {
     const [textToShow, setTextToShow] = useState('');
@@ -21,10 +22,10 @@ function Home() {
             <div className="flex items-center justify-center h-screen ">
                 <div className=" grid-cols-1" >
                     <div className="text-center" >
-                        <h1 className="text-6xl md:text-9xl font-bold font-Aldrich tracking-widest text-silver-500" >
+                        <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold font-Aldrich tracking-widest text-silver-500" >
                             RAWBELL
                         </h1>
-                        <h1 className="text-5xl md:text-8xl font-bold font-Aldrich text-silver-500 tracking-extra-wide" >TECHNOLOGIES</h1>
+                        <h1 className="text-3xl md:text-5xl lg:text-8xl font-bold font-Aldrich text-silver-500 tracking-extra-wide" >TECHNOLOGIES</h1>
                     </div>
                     <div className="text-center" >
                         <span className="text-xl md:text-2xl font-Alerta text-neutral-600 text-center" >
@@ -38,6 +39,11 @@ function Home() {
                             </span>
                         </div>
                         <span className=" text-gray-500  text-xl ml-4 font-Alata">Our Services</span>
+                    </div>
+                    <div className="grid grid-cols-12 gap-4 justify-center py-5  " >
+                        <div className="col-span-12 md:col-span-12 text-white  border-collapse">
+                            <LogoAnim />
+                        </div>
                     </div>
                 </div>
             </div>
