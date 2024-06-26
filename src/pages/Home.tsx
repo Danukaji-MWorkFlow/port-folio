@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import LogoAnim from '../Components/LogoAnim';
 import Card from "../Components/Card";
+import IC3D from "../Components/IC3D";
 
 function Home() {
     const [textToShow, setTextToShow] = useState('');
@@ -18,9 +19,27 @@ function Home() {
         }, 250);
         return () => clearInterval(interval);
     }, []);
+
+    const cardDetails = [
+        {
+            title: 'WEB DESIGN',
+            content: 'Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.',
+            footer: 'ABOUT WEB DESIGN'
+        },
+        {
+            title: 'SOFTWARE DEVELOPMENT',
+            content: 'Custom software solutions that streamline your business processes, enhance productivity, and provide a competitive edge.',
+            footer: 'ABOUT SOFTWARE DEVELOPMENT'
+        },
+        {
+            title: 'E-COMMERCE',
+            content: 'E-commerce solutions that boost your online presence, enhance user experience, and drive sales through seamless integration and optimization.',
+            footer: 'ABOUT E-COMMERXCE SOLUTION'
+        }
+    ];
     return (
         <>
-            <div className="flex items-center justify-center h-screen ">
+            <div className="flex my-10 items-center justify-center h-screen ">
                 <div className=" grid-cols-1" >
                     <div className="text-center" >
                         <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold font-Aldrich tracking-widest text-silver-500" >
@@ -47,11 +66,18 @@ function Home() {
                         </div>
                     </div>
                     <div className="flex items-center justify-center" >
-                        <Card 
-                        title="Test 1"
-                        content="This is a Content For This Card"
-                        footer={["foooter item1", "footer item 2", "footer item 3"]}
+                        <Card
+                            cardnumber = "1"
+                            title="WEB DESIGN"
+                            content="Visually stunning web designs that captivate your audience by blending your brand voice and customer needs."
+                            footer="FOOTER ITEM"
                         />
+
+                    </div>
+                    <div className="grid grid-cols-3 mx-auto gap-4 justify-center">
+                        <div className="col-span-1 rounded">
+                            <p className="text-gray-300 text-4xl font-bold text-center" >Project Process</p>
+                        </div>
                     </div>
                 </div>
             </div>
