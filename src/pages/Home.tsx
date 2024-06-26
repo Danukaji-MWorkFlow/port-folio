@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import LogoAnim from '../Components/LogoAnim';
+import Card from "../Components/Card";
 
 function Home() {
     const [textToShow, setTextToShow] = useState('');
@@ -44,6 +45,13 @@ function Home() {
                         <div className="col-span-12 md:col-span-12 text-white  border-collapse">
                             <LogoAnim />
                         </div>
+                    </div>
+                    <div className="flex items-center justify-center" >
+                        <Card 
+                        title="Test 1"
+                        content="This is a Content For This Card"
+                        footer={["foooter item1", "footer item 2", "footer item 3"]}
+                        />
                     </div>
                 </div>
             </div>
