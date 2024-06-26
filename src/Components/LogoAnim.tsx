@@ -26,7 +26,7 @@ const Container = styled.div`
 const Slider = styled.div`
     display: flex;
     width: calc(100% * 2); /* Adjusted width to allow smooth transition */
-    animation: ${scroll} 30s linear infinite;
+    animation: ${scroll} 15s linear infinite;
 `;
 
 const Slide = styled.div`

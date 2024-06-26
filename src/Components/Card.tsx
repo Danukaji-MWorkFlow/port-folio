@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, content, footer, cardnumber }) => {
     return (
-        <div className="max-w-sm overflow-hidden shadow-lg bg-red-300 bg-opacity-10 border border-gray-200 border-opacity-20">
+        <div className="w-full lg:max-w-sm overflow-hidden shadow-lg bg-red-300 bg-opacity-10 border border-gray-200 border-opacity-20">
             <div className="px-6 py-4" >
 
                 <div className="text-2xl py-5 mb-2 text-left font-sans text-white " >
