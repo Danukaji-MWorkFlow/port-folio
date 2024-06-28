@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ title, content, footer, cardnumber }) => {
 
                 <div className="text-2xl py-5 mb-2 text-left font-sans text-white " >
                     <span className="text-gray-500 text-sm " >0{cardnumber}</span>
-<br/>
+                    <br />
                     <span>{title}</span>
                 </div>
                 <p className="text-gray-400 py-5 text-left text-base" >

@@ -1,15 +1,18 @@
-// src/components/Model.tsx
-import React, { useEffect } from 'react';
+
 import { useGLTF } from '@react-three/drei';
+import { Group } from 'three';
 
-const Model: React.FC = () => {
-  const { scene } = useGLTF('src/assets/IC you.glb');
 
-  useEffect(() => {
-    console.log('Model loaded:', scene);
-  }, [scene]);
-  return <primitive object={scene} scale={[1.5, 1.5, 1.5]} position={[0, 0, 0]} />;
 
+type ModelProps = {
+  position?: [number, number, number];
+  scale?: [number, number, number];
+  rotation?: [number, number, number];
+};
+
+const Model: React.FC<ModelProps> = (props) => {
+  const { scene } = useGLTF('src/assets/IC you.glb') as { scene: Group };
+  return <primitive object={scene} {...props} />;
 };
 
 export default Model;

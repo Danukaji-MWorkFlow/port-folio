@@ -1,0 +1,8 @@
+.heart-animation {
+    border-radius: 50%;
+    background: linear-gradient(315deg, #727272, #606060);
+    box-shadow:  -41px -41px 82px #5b5b5b,
+                 41px 41px 82px #7b7b7b;
+    z-index:-1;
+}
+

@@ -15,6 +15,9 @@ export default {
         Aldrich: ["Aldrich", "cursive"],
         Alata: ["Alata", 'sans-serif'],
         Alerta: ["Allerta Stencil", 'cursive'],
+        Kalam: ["Kalam", "cursive"],
+        Architects: ["Architects Daughter","italic"],
+        googleRoboto: ["Roboto", 'sans-serif']
       },
       colors:{
         'gold-500': '#FFD700',

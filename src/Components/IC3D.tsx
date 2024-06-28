@@ -1,22 +1,36 @@
-// src/components/IC3D.tsx
-import React from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import Model from './Model';
 
+
+
 const IC3D: React.FC = () => {
+
   return (
-    <div style={{  }}>
-      <Canvas>
-        <ambientLight intensity={1.0} /> {/* Increased intensity */}
-        <directionalLight position={[10, 10, 10]} intensity={2.0} /> {/* Increased intensity */}
-        <pointLight position={[-10, -10, -10]} intensity={1.5} /> {/* Additional light */}
-        <PerspectiveCamera makeDefault position={[0, 2, 5]} />
-        <OrbitControls />
-        <Model />
-      </Canvas>
-    </div>
+    <Canvas >
+      <ambientLight intensity={1} />
+      <directionalLight color={"white"} intensity={0.02} position={[0.8, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.03} position={[0.7, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.04} position={[0.6, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.05} position={[0.5, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.06} position={[0.4, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.07} position={[0.3, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.08} position={[0.2, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.09} position={[0.1, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.1} position={[0, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.09} position={[-0.2, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.08} position={[-0.3, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.07} position={[-0.4, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.06} position={[-0.5, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.05} position={[-0.6, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.04} position={[-0.7, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.03} position={[-0.8, 0, 1]} />
+      <directionalLight color={"white"} intensity={0.02} position={[-0.9, 0, 1]} />
+
+
+        <Model position={[0, 0, 0]} rotation={[-Math.PI / 2, -Math.PI, Math.PI]} scale={[2.5, 2.5, 2.5]} />
+    </Canvas>
   );
 };
+
 
 export default IC3D;

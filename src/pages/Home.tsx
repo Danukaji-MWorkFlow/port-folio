@@ -1,9 +1,13 @@
 import LogoAnim from '../Components/LogoAnim';
 import Card from "../Components/Card";
-import IC3D from "../Components/IC3D";
+//import StepCard from '../Components/StepCard';
+import AnimatedLine from '../Components/AnimatedLine';
+import ProjectStep from '../Components/ProjectStep';
+
 
 function Home() {
-    
+
+
     const cardDetails = [
         {
             title: 'WEB DESIGN',
@@ -28,8 +32,8 @@ function Home() {
     return (
         <>
             <div className="flex mt-20 items-center justify-center">
-                <div className="grid mt-10 grid-cols-1 py-10">
-                    <div className="text-center">
+                <div className="grid mt-10 grid-cols-1 gap-4 py-10">
+                    <div className="text-center wow animate__animated animate__fadeIn">
                         <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold font-Aldrich tracking-widest text-silver-500">
                             RAWBELL
                         </h1>
@@ -37,12 +41,12 @@ function Home() {
                             TECHNOLOGIES
                         </h1>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                         <span className="text-xl md:text-2xl font-Alerta text-neutral-600">
                             Premium Web Design, Development, and SEO services to help your business stand out.
                         </span>
                     </div>
-                    <div className="items-center flex py-4 justify-center">
+                    <div className="items-center flex py-4 justify-center wow animate__animated animate__fadeIn" data-wow-delay="1s">
                         <div className="w-12 h-12 rounded-full bg-transparent border text-white hover:bg-gray-600 flex items-center justify-center">
                             <span className="material-symbols-outlined">
                                 arrow_downward
@@ -55,8 +59,8 @@ function Home() {
                             <LogoAnim />
                         </div>
                     </div>
-                    <div className="flex  items-center justify-center py-20">
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    <div className="flex items-center justify-center py-20">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
                             {cardDetails.map((card, index) => (
                                 <Card
                                     key={index}
@@ -68,14 +72,19 @@ function Home() {
                             ))}
                         </div>
                     </div>
-                    <p className=" text-red-200 text-center">THE PROCESS</p>
-                    <h1 className="text-red-200 text-center text-8xl font-Aldrich" >Your Project</h1>
-                    <h1 className="text-red-200 text-center text-8xl font-cursive" >in 5 steps</h1>
-                    <p className="text-red-200 text-center font-Alerta" >Our process ensures that we create a Project <br/> tailored to your business needs.</p>
-                    <div className="grid grid-cols-3 mx-auto gap-4 justify-center">
-                   
-                        <div className="col-span-3 rounded">
-                            
+                    {/* How to add here the 3D model */}
+                    <div className="flex flex-col items-center py-20">
+
+                        {/* IC3D Component */}
+                        <AnimatedLine/>
+                    </div>
+                    <p className=" text-red-200 text-center font-googleRoboto">THE PROCESS</p>
+                    <h1 className="text-red-200 text-center text-4xl md:text-8xl font-googleRoboto" >Your Project</h1>
+                    <h1 className="text-red-200 text-center text-3xl md:text-7xl font-Architects" >in 5 steps</h1>
+                    <p className="text-red-200 text-center font-googleRoboto my-5" >Our process ensures that we create a Project <br /> tailored to your business needs.</p>
+                    <div className="grid grid-cols-1 mx-auto gap-4 text-white justify-center">
+                        <div className="flex justify-between items-center">
+                            <ProjectStep/>
                         </div>
                     </div>
                 </div>
