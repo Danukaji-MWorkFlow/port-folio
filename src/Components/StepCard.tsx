@@ -9,7 +9,7 @@ interface CardData {
 
 const StepCard: React.FC<CardData> = ({ title, content, uptitle, list, time }) => {
     return (
-        <div className="w-full overflow-hidden shadow-lg bg-red-300 bg-opacity-10 border border-gray-200 border-opacity-20">
+        <div className="w-full overflow-hidden shadow-lg bg-red-300 bg-opacity-10 border border-gray-200 border-opacity-20 mt-10">
             <div className="px-6 py-4" >
                 <div className="justify-end text-left flex">
                     <span className=" border bg-opacity-5 text-sm font-sans text-gray-500 px-1 py-1 border-opacity-15" >

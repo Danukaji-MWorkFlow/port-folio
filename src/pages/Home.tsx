@@ -82,7 +82,7 @@ function Home() {
                     <h1 className="text-red-200 text-center text-4xl md:text-8xl font-googleRoboto" >Your Project</h1>
                     <h1 className="text-red-200 text-center text-3xl md:text-7xl font-Architects" >in 5 steps</h1>
                     <p className="text-red-200 text-center font-googleRoboto my-5" >Our process ensures that we create a Project <br /> tailored to your business needs.</p>
-                    <div className="grid grid-cols-1 mx-auto gap-4 text-white justify-center">
+                    <div className="grid ">
                         <div className="flex justify-between items-center">
                             <ProjectStep/>
                         </div>

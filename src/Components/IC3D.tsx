@@ -27,6 +27,7 @@ const IC3D: React.FC = () => {
       <directionalLight color={"white"} intensity={0.02} position={[-0.9, 0, 1]} />
 
 
+
         <Model position={[0, 0, 0]} rotation={[-Math.PI / 2, -Math.PI, Math.PI]} scale={[2.5, 2.5, 2.5]} />
     </Canvas>
   );
