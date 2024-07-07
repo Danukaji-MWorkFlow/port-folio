@@ -14,7 +14,11 @@
 }
 
 .line-1 {
-  width: 1px; /* Adjust width as needed */
-  height: 100px; /* Height of the line */
-  background-color: white; /* Line color */
+  width: 1px;
+  /* Adjust width as needed */
+  height: 100px;
+  /* Height of the line */
+  background-color: white;
+  /* Line color */
 }
+

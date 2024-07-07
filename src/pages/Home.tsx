@@ -3,6 +3,7 @@ import Card from "../Components/Card";
 //import StepCard from '../Components/StepCard';
 import AnimatedLine from '../Components/AnimatedLine';
 import ProjectStep from '../Components/ProjectStep';
+import DeveloperCardAnimation from '../Components/DeveloperCardAnimaion';
 
 
 function Home() {
@@ -76,7 +77,7 @@ function Home() {
                     <div className="flex flex-col items-center py-20">
 
                         {/* IC3D Component */}
-                        <AnimatedLine/>
+                        <AnimatedLine />
                     </div>
                     <p className=" text-red-200 text-center font-googleRoboto">THE PROCESS</p>
                     <h1 className="text-red-200 text-center text-4xl md:text-8xl font-googleRoboto" >Your Project</h1>
@@ -84,9 +85,11 @@ function Home() {
                     <p className="text-red-200 text-center font-googleRoboto my-5" >Our process ensures that we create a Project <br /> tailored to your business needs.</p>
                     <div className="grid ">
                         <div className="flex justify-between items-center">
-                            <ProjectStep/>
+                            <ProjectStep />
                         </div>
                     </div>
+                    <h1 className='text-white text-center text-3xl'>Developer Team</h1>
+                    <DeveloperCardAnimation/>
                 </div>
             </div>
         </>
