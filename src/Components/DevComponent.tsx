@@ -12,9 +12,9 @@ interface DevVariables {
 
 const DevComponents: React.FC<DevVariables> = ({ name, imgPath, description, github, linkedin, email, projects }) => {
   return (
-    <div className="p-0 grid grid-cols-1 shadow-md rounded-3xl bg-black bg-opacity-10 border border-gray-200 border-opacity-20 w-64 h-full relative">
+    <div className="p-0 scroll-pl-6 gap-8 grid grid-cols-1 shadow-md rounded-3xl bg-black bg-opacity-10 border border-gray-200 border-opacity-20 w-64 h-full relative">
       <div className="col-span-1 relative">
-        <img src={"src/assets/94730271 (1).jpeg"} alt={name} className="rounded-3xl w-full h-auto" />
+        <img src={imgPath} alt={name} className="rounded-3xl w-full h-auto" />
         <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-black to-transparent rounded-b-3xl"></div>
       </div>
       <div className="col-span-1 p-4 justify-center text-center">
