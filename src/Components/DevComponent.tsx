@@ -29,6 +29,12 @@ const DevComponents: React.FC<DevVariables> = ({ name, imgPath, description, git
           <span className="material-symbols-outlined relative top-1">
             person
           </span>{"GET IN TOUCH"}
+          <span className='hidden' >
+            {github}
+            {linkedin}
+            {email}
+            {projects}
+          </span>
         </button>
       </div>
     </div>
